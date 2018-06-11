@@ -72,11 +72,11 @@
 }
 
 - (void)setRandomScrollDigit:(NSUInteger)aDigit length:(NSUInteger)length{
-    NSMutableString *str = [NSMutableString stringWithFormat:@"%d", self.digit];
+    NSMutableString *str = [NSMutableString stringWithFormat:@"%lu", (unsigned long)self.digit];
     for (int i = 1; i < length - 1; ++i) {
         [str appendFormat:@"\n%d", rand() % 10];
     }
-    [str appendFormat:@"\n%d", aDigit];
+    [str appendFormat:@"\n%lu", (unsigned long)aDigit];
     self.label.text = str;
     self.label.numberOfLines = length;
     CGRect rect = self.label.frame;
@@ -107,7 +107,8 @@
     [self addSubview:self.backgroundView];
 
 
-    CGSize size= [@"8" sizeWithFont:self.digitFont];
+//    CGSize size= [@"8" sizeWithFont:self.digitFont];
+    CGSize size = [@"相关NSString" boundingRectWithSize:CGSizeMake(100, 0) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:nil context:nil].size;
     
     _oneDigitHeight = size.height;
     
