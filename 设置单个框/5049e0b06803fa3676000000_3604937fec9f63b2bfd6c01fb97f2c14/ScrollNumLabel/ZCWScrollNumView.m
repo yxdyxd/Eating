@@ -106,9 +106,18 @@
     self.backgroundView.frame = backrect;
     [self addSubview:self.backgroundView];
 
-
-//    CGSize size= [@"8" sizeWithFont:self.digitFont];
-    CGSize size = [@"相关NSString" boundingRectWithSize:CGSizeMake(100, 0) options: NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:nil context:nil].size;
+    // 计算label的高度
+    CGSize size= [@"8" sizeWithFont:self.digitFont];
+    
+    CGSize infoSize = CGSizeMake(self.frame.size.width, 1000);
+    NSDictionary *dic = @{NSFontAttributeName : [UIFont systemFontOfSize:17.f ]};
+    //默认的
+    CGRect infoRect =   [@"123" boundingRectWithSize:infoSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:dic context:nil];
+    // 参数1: 自适应尺寸,提供一个宽度,去自适应高度
+    // 参数2:自适应设置 (以行为矩形区域自适应,以字体字形自适应)
+    // 参数3:文字属性,通常这里面需要知道是字体大小
+    // 参数4:绘制文本上下文,做底层排版时使用,填nil即可
+    
     
     _oneDigitHeight = size.height;
     
