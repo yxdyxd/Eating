@@ -62,7 +62,7 @@
 }
 
 - (void)setDigitFast:(NSUInteger)aDigit{
-    self.label.text = [NSString stringWithFormat:@"%d\n%d", self.digit, aDigit];
+    self.label.text = [NSString stringWithFormat:@"%lu\n%lu", (unsigned long)self.digit, (unsigned long)aDigit];
     self.label.numberOfLines = 2;
     CGRect rect = self.label.frame;
     rect.origin.y = 0;
@@ -73,10 +73,45 @@
 
 - (void)setRandomScrollDigit:(NSUInteger)aDigit length:(NSUInteger)length{
     NSMutableString *str = [NSMutableString stringWithFormat:@"%lu", (unsigned long)self.digit];
-    for (int i = 1; i < length - 1; ++i) {
-        [str appendFormat:@"\n%d", rand() % 10];
+//    for (int i = 1; i < length - 1; ++i) {
+//        // 此处的数字是循环转动的数字
+//        [str appendFormat:@"\n%d", rand() % 10];
+//    }
+    
+    // 此处应显示，备选的吃饭种类
+    [str appendFormat:@"\n牛肉面\n方便面\n春饼\n汉堡\n酸菜鱼\n牛肉汤\n刀削面\n麻辣烫"];
+    NSLog(@"current aDigit == %lu", (unsigned long)aDigit);
+    
+    // 此处为最终的显示数字
+//    [str appendFormat:@"\n%lu", (unsigned long)aDigit];
+    // 判断显示的是哪个数字，选择吃饭区间
+    if (aDigit == 5) {
+        [str appendFormat:@"\n烤肉饭"];
+        self.label.text = str;
+        // 牛肉面，方便面，新荟城，牛肉汤，刀削面，麻辣烫
+    }else if (aDigit <= 1) {
+        
+        [str appendFormat:@"\n方便面"];
+    }else if (1 < aDigit || aDigit <= 3) {
+        
+        [str appendFormat:@"\n汉堡"];
+    }else if (3 < aDigit || aDigit <= 5) {
+        
+        [str appendFormat:@"\n春饼"];
+    }else if (5 < aDigit || aDigit <= 7) {
+        
+        [str appendFormat:@"\n酸菜鱼"];
+    }else if (aDigit == 8) {
+        
+        [str appendFormat:@"\n牛肉汤"];
+    }else if (aDigit == 9) {
+        
+        [str appendFormat:@"\n刀削面"];
+    }else{
+        [str appendFormat:@"\n探索更多餐馆匳"];
     }
-    [str appendFormat:@"\n%lu", (unsigned long)aDigit];
+    
+    
     self.label.text = str;
     self.label.numberOfLines = length;
     CGRect rect = self.label.frame;
@@ -107,17 +142,9 @@
     [self addSubview:self.backgroundView];
 
     // 计算label的高度
-    CGSize size= [@"8" sizeWithFont:self.digitFont];
-    
-    CGSize infoSize = CGSizeMake(self.frame.size.width, 1000);
-    NSDictionary *dic = @{NSFontAttributeName : [UIFont systemFontOfSize:17.f ]};
-    //默认的
-    CGRect infoRect =   [@"123" boundingRectWithSize:infoSize options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:dic context:nil];
-    // 参数1: 自适应尺寸,提供一个宽度,去自适应高度
-    // 参数2:自适应设置 (以行为矩形区域自适应,以字体字形自适应)
-    // 参数3:文字属性,通常这里面需要知道是字体大小
-    // 参数4:绘制文本上下文,做底层排版时使用,填nil即可
-    
+//    CGSize size= [@"8" sizeWithFont:self.digitFont];
+    // 计算单行文字的高度：sizeWithAttributes
+    CGSize size = [@"一二三四五六七八九" sizeWithAttributes:@{NSFontAttributeName :self.digitFont}];
     
     _oneDigitHeight = size.height;
     
@@ -129,6 +156,7 @@
     rect.origin.y = 0;
     self.label = [[[UILabel alloc] initWithFrame:rect] autorelease];
     self.label.font = self.digitFont;
+    self.label.textAlignment = NSTextAlignmentCenter;
     self.label.backgroundColor = [UIColor clearColor];
     [view addSubview:self.label];
     [self addSubview:view];
