@@ -80,37 +80,42 @@
     
     // 此处应显示，备选的吃饭种类
     [str appendFormat:@"\n牛肉面\n方便面\n春饼\n汉堡\n酸菜鱼\n牛肉汤\n刀削面\n麻辣烫"];
-    NSLog(@"current aDigit == %lu", (unsigned long)aDigit);
     
     // 此处为最终的显示数字
 //    [str appendFormat:@"\n%lu", (unsigned long)aDigit];
     // 判断显示的是哪个数字，选择吃饭区间
-    if (aDigit == 5) {
+    if (aDigit == 0) {
         [str appendFormat:@"\n烤肉饭"];
         self.label.text = str;
         // 牛肉面，方便面，新荟城，牛肉汤，刀削面，麻辣烫
-    }else if (aDigit <= 1) {
+    }else if (aDigit >= 1 && aDigit < 3) {
         
         [str appendFormat:@"\n方便面"];
-    }else if (1 < aDigit || aDigit <= 3) {
+        self.label.text = str;
+    }else if (aDigit >= 3 && aDigit < 5) {
         
         [str appendFormat:@"\n汉堡"];
-    }else if (3 < aDigit || aDigit <= 5) {
+        self.label.text = str;
+    }else if (aDigit >= 5 && aDigit < 7) {
         
         [str appendFormat:@"\n春饼"];
-    }else if (5 < aDigit || aDigit <= 7) {
+        self.label.text = str;
+    }else if (aDigit >= 7 && aDigit < 9) {
         
         [str appendFormat:@"\n酸菜鱼"];
-    }else if (aDigit == 8) {
+        self.label.text = str;
+    }else if (aDigit >= 9) {
         
         [str appendFormat:@"\n牛肉汤"];
-    }else if (aDigit == 9) {
-        
-        [str appendFormat:@"\n刀削面"];
-    }else{
-        [str appendFormat:@"\n探索更多餐馆匳"];
-    }
-    
+        self.label.text = str;}
+//    }else if (aDigit == 6) {
+//
+//        [str appendFormat:@"\n刀削面"];
+//        self.label.text = str;
+//    }else{
+//        [str appendFormat:@"\n探索更多餐馆匳"];
+//        self.label.text = str;
+//    }
     
     self.label.text = str;
     self.label.numberOfLines = length;
