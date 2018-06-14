@@ -19,12 +19,19 @@
 		0B140A7B20CA762600E104B7 /* UIView+STDYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B140A7720CA762600E104B7 /* UIView+STDYExtension.m */; };
 		0B140A8120CA763B00E104B7 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B140A7E20CA763B00E104B7 /* BaseNavigationController.m */; };
 		0B140A8220CA763B00E104B7 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B140A7F20CA763B00E104B7 /* BaseTabBarController.m */; };
+		0B29BAE020D2646600C2972B /* money_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29BADA20D2646600C2972B /* money_bg.png */; };
+		0B29BAE120D2646600C2972B /* bj_numbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29BADB20D2646600C2972B /* bj_numbg@2x.png */; };
+		0B29BAE220D2646600C2972B /* money_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29BADC20D2646600C2972B /* money_bg@2x.png */; };
+		0B29BAE320D2646600C2972B /* money_bg_mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29BADD20D2646600C2972B /* money_bg_mask@2x.png */; };
+		0B29BAE420D2646600C2972B /* bj_numbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29BADE20D2646600C2972B /* bj_numbg.png */; };
+		0B29BAE520D2646600C2972B /* money_bg_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B29BADF20D2646600C2972B /* money_bg_mask.png */; };
 		0B2B0AAF20CE10F80030521F /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B0AAD20CE10F80030521F /* first.png */; };
 		0B2B0AB020CE10F80030521F /* first-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B0AAE20CE10F80030521F /* first-1.png */; };
 		0B2B0AB420CE11240030521F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B0AB320CE11240030521F /* MyViewController.m */; };
 		0B2B0AB820CE135E0030521F /* LoadMB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B0AB620CE135E0030521F /* LoadMB.m */; };
 		0B2B0ABF20CE14820030521F /* my.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B0ABD20CE14820030521F /* my.png */; };
 		0B2B0AC020CE14820030521F /* my-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2B0ABE20CE14820030521F /* my-2.png */; };
+		0B8A5E7720D2025900E70477 /* ZCWScrollNumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A5E7620D2025900E70477 /* ZCWScrollNumView.m */; };
 		0BDA3DF520CE0E23000DE2C5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA3DF420CE0E23000DE2C5 /* FirstViewController.m */; };
 		DFE24DA5E23930D55A2C60A1 /* libPods-EatSomethings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6543B73C9A061974B750CB11 /* libPods-EatSomethings.a */; };
 /* End PBXBuildFile section */
@@ -53,6 +60,12 @@
 		0B140A7F20CA763B00E104B7 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		0B140A8020CA763B00E104B7 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		0B140A8320CA764E00E104B7 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		0B29BADA20D2646600C2972B /* money_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_bg.png; sourceTree = "<group>"; };
+		0B29BADB20D2646600C2972B /* bj_numbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bj_numbg@2x.png"; sourceTree = "<group>"; };
+		0B29BADC20D2646600C2972B /* money_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "money_bg@2x.png"; sourceTree = "<group>"; };
+		0B29BADD20D2646600C2972B /* money_bg_mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "money_bg_mask@2x.png"; sourceTree = "<group>"; };
+		0B29BADE20D2646600C2972B /* bj_numbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bj_numbg.png; sourceTree = "<group>"; };
+		0B29BADF20D2646600C2972B /* money_bg_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_bg_mask.png; sourceTree = "<group>"; };
 		0B2B0AAD20CE10F80030521F /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		0B2B0AAE20CE10F80030521F /* first-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first-1.png"; sourceTree = "<group>"; };
 		0B2B0AB220CE11240030521F /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
@@ -61,6 +74,8 @@
 		0B2B0AB720CE135E0030521F /* LoadMB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMB.h; sourceTree = "<group>"; };
 		0B2B0ABD20CE14820030521F /* my.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my.png; sourceTree = "<group>"; };
 		0B2B0ABE20CE14820030521F /* my-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "my-2.png"; sourceTree = "<group>"; };
+		0B8A5E7520D2025900E70477 /* ZCWScrollNumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCWScrollNumView.h; sourceTree = "<group>"; };
+		0B8A5E7620D2025900E70477 /* ZCWScrollNumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCWScrollNumView.m; sourceTree = "<group>"; };
 		0BDA3DF320CE0E23000DE2C5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		0BDA3DF420CE0E23000DE2C5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		1EC91A5F832C5C8F061185D5 /* Pods-EatSomethings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatSomethings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatSomethings/Pods-EatSomethings.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +165,12 @@
 		0B2B0AAC20CE10E40030521F /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				0B29BADE20D2646600C2972B /* bj_numbg.png */,
+				0B29BADB20D2646600C2972B /* bj_numbg@2x.png */,
+				0B29BADF20D2646600C2972B /* money_bg_mask.png */,
+				0B29BADD20D2646600C2972B /* money_bg_mask@2x.png */,
+				0B29BADA20D2646600C2972B /* money_bg.png */,
+				0B29BADC20D2646600C2972B /* money_bg@2x.png */,
 				0B2B0ABE20CE14820030521F /* my-2.png */,
 				0B2B0ABD20CE14820030521F /* my.png */,
 				0B2B0AAE20CE10F80030521F /* first-1.png */,
@@ -203,6 +224,8 @@
 		0BDA3DF220CE0E04000DE2C5 /* FirstPageController */ = {
 			isa = PBXGroup;
 			children = (
+				0B8A5E7520D2025900E70477 /* ZCWScrollNumView.h */,
+				0B8A5E7620D2025900E70477 /* ZCWScrollNumView.m */,
 				0BDA3DF320CE0E23000DE2C5 /* FirstViewController.h */,
 				0BDA3DF420CE0E23000DE2C5 /* FirstViewController.m */,
 			);
@@ -284,13 +307,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B29BAE120D2646600C2972B /* bj_numbg@2x.png in Resources */,
 				0B2B0AB020CE10F80030521F /* first-1.png in Resources */,
 				0B2B0ABF20CE14820030521F /* my.png in Resources */,
 				0B2B0AC020CE14820030521F /* my-2.png in Resources */,
 				0B2B0AAF20CE10F80030521F /* first.png in Resources */,
 				0B140A6420CA6ED300E104B7 /* LaunchScreen.storyboard in Resources */,
 				0B140A6120CA6ED300E104B7 /* Assets.xcassets in Resources */,
+				0B29BAE520D2646600C2972B /* money_bg_mask.png in Resources */,
+				0B29BAE420D2646600C2972B /* bj_numbg.png in Resources */,
 				0B140A5F20CA6ED100E104B7 /* Main.storyboard in Resources */,
+				0B29BAE320D2646600C2972B /* money_bg_mask@2x.png in Resources */,
+				0B29BAE220D2646600C2972B /* money_bg@2x.png in Resources */,
+				0B29BAE020D2646600C2972B /* money_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +356,7 @@
 				0B140A7B20CA762600E104B7 /* UIView+STDYExtension.m in Sources */,
 				0B140A5C20CA6ED100E104B7 /* ViewController.m in Sources */,
 				0B140A7920CA762600E104B7 /* UIViewExt.m in Sources */,
+				0B8A5E7720D2025900E70477 /* ZCWScrollNumView.m in Sources */,
 				0B140A7A20CA762600E104B7 /* UITextField+CHTHealper.m in Sources */,
 				0B140A8120CA763B00E104B7 /* BaseNavigationController.m in Sources */,
 				0B140A8220CA763B00E104B7 /* BaseTabBarController.m in Sources */,
@@ -477,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EWQD3JR6H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EatSomethings/Header/Header.h";
-				INFOPLIST_FILE = /Users/yangxudong/Desktop/EatSomethings/EatSomethings/SystemHelper/Info.plist;
+				INFOPLIST_FILE = /Users/yangxudong/Desktop/Eating/EatSomethings/EatSomethings/SystemHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EWQD3JR6H;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EatSomethings/Header/Header.h";
-				INFOPLIST_FILE = /Users/yangxudong/Desktop/EatSomethings/EatSomethings/SystemHelper/Info.plist;
+				INFOPLIST_FILE = /Users/yangxudong/Desktop/Eating/EatSomethings/EatSomethings/SystemHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
