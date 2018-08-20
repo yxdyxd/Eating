@@ -80,7 +80,7 @@
     
     // 此处应显示，备选的吃饭种类
     [str appendFormat:@"\n牛肉面\n方便面\n春饼\n汉堡\n酸菜鱼\n牛肉汤\n刀削面\n麻辣烫"];
-    
+    NSLog(@"current aDigit == %lu", (unsigned long)aDigit);
     // 此处为最终的显示数字
 //    [str appendFormat:@"\n%lu", (unsigned long)aDigit];
     // 判断显示的是哪个数字，选择吃饭区间
